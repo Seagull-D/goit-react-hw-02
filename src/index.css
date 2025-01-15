@@ -1,8 +1,27 @@
 
 
 body {
-  font-family: sans-serif;
-  line-height: 1.5;
+  background: radial-gradient(circle, #1b2735, #090a0f);
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.stars {
+  width: 2px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  animation: blink 2s infinite;
+  border-radius: 50%;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.2;
+  }
 }
 
 

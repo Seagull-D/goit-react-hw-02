@@ -1,8 +1,9 @@
+import s from "./Feedback.module.css"
 const Feedback = ({ fbValues, total }) => {
    
    console.log(fbValues)
     return(
-<ul>
+<ul className={s.feedbackContainer}>
     <li>Good: {fbValues.good}</li>
     <li>Neutral:{fbValues.neutral}</li>
     <li>Bad: {fbValues.bad} </li>

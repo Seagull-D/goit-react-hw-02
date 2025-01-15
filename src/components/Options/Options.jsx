@@ -1,13 +1,13 @@
-
+import s from "./Options.module.css"
 
 const Options = ({ feedback, total, reset }) => {
    
     return(
-    <ul>
-    <button onClick={() => feedback('good')}>Good</button> 
-    <button onClick={() => feedback('neutral')}>Neutral</button>
-    <button onClick={() => feedback('bad')}>Bad</button> 
-            {total>0  && <button onClick={() =>reset()}>Resed</button>}
+    <ul className={s.optionsContainer}>
+    <button className={s.optionsBnt} onClick={() => feedback('good')}>👍</button> 
+    <button className={s.optionsBnt} onClick={() => feedback('neutral')}>😐</button>
+    <button className={s.optionsBnt} onClick={() => feedback('bad')}>👎</button> 
+{total > 0 && <button className={s.resetBtn} onClick={() =>reset()}>Resed</button>}
    
   
 </ul>)
